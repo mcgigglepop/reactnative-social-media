@@ -6,6 +6,12 @@ import {faEnvelope} from '@fortawesome/free-regular-svg-icons';
 import globalStyle from './assets/styles/globalStyle';
 
 const App = () => {
+  const userStories = [
+    {
+      firstName: 'Joseph',
+      id: 1
+    }
+  ]
   return (
     <SafeAreaView>
       <View style={globalStyle.header}>
