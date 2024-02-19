@@ -16,7 +16,7 @@ const UserStory = props => {
   );
 };
 
-UserStory.PropTypes = {
+UserStory.propTypes = {
   firstName: PropTypes.string.isRequired,
   profileImage: PropTypes.any.isRequired,
 };
