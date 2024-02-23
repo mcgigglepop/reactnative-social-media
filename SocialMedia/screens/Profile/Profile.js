@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import globalStyle from '../../assets/styles/globalStyle';
 import style from './style';
+import {ProfileTabsNavigation} from '../../navigation/MainNavigation';
 
 const Profile = ({navigation}) => {
   return (
@@ -38,6 +39,9 @@ const Profile = ({navigation}) => {
             <Text style={style.statAmount}>100</Text>
             <Text style={style.statType}>Posts</Text>
           </View>
+        </View>
+        <View style={globalStyle.flex}>
+          <ProfileTabsNavigation />
         </View>
       </ScrollView>
     </SafeAreaView>
