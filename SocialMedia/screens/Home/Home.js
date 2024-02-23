@@ -14,7 +14,7 @@ import style from './style';
 import UserPost from '../../components/UserPost/UserPost';
 import 'react-native-gesture-handler';
 import globalStyle from '../../assets/styles/globalStyle';
-import { Routes } from '../../navigation/Routes';
+import {Routes} from '../../navigation/Routes';
 
 const Home = ({navigation}) => {
   const userStories = [
@@ -164,11 +164,7 @@ const Home = ({navigation}) => {
             <>
               <View style={style.header}>
                 <Title title={"Let's Explore"} />
-                <TouchableOpacity 
-                  style={style.messageIcon}
-                  onPress={() => {
-                    navigation.navigate(Routes.Profile);
-                  }}>
+                <TouchableOpacity style={style.messageIcon}>
                   <FontAwesomeIcon
                     icon={faEnvelope}
                     size={20}
